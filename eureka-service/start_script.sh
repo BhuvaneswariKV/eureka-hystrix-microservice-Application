@@ -6,7 +6,7 @@ do
         curl --connect-timeout 20 localhost:8888 > /dev/null 2>&1
         if [ "$?" == 0 ]; then
                 echo "Config server is available"
-                java -jar zipkin-service-0.0.1-SNAPSHOT.jar > zipkin_service.log
+                java -jar eureka-service-0.0.1-SNAPSHOT.jar > eureka_service.log
         fi
         echo "Config server is not available; waiting for 10s"
         sleep 10
